@@ -1,0 +1,14 @@
+# --- Python/Django Backend ---
+
+sweetshop-backend/venv/
+sweetshop-backend/.env
+sweetshop-backend/__pycache__/
+sweetshop-backend/*.pyc
+
+
+# --- React/Vite Frontend ---
+spark-react-sweet-shop-frontend/node_modules/
+spark-react-sweet-shop-frontend/dist/
+spark-react-sweet-shop-frontend/.env*
+spark-react-sweet-shop-frontend/*.log
+.DS_Store
