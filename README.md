@@ -1,25 +1,25 @@
 # Sweet Shop Management System
 
-[cite_start]This is a full-stack web application for a "Sweet Shop Management System," built as a TDD Kata[cite: 1, 3]. The application features a robust backend API built with Django REST Framework and a modern, dynamic frontend built with React.
+This is a full-stack web application for a "Sweet Shop Management System," built as a TDD Kata. The application features a robust backend API built with Django REST Framework and a modern, dynamic frontend built with React.
 
-[cite_start]The backend handles user authentication (using JWT), product inventory, and purchase/restock logic[cite: 6, 11, 14]. [cite_start]The frontend provides a user-friendly interface for customers to register, log in, browse products, and make purchases[cite: 32, 36, 37, 39]. [cite_start]Admin users also have access to protected endpoints for managing the shop's inventory[cite: 25, 29].
+The backend handles user authentication (using JWT), product inventory, and purchase/restock logic. The frontend provides a user-friendly interface for customers to register, log in, browse products, and make purchases. Admin users also have access to protected endpoints for managing the shop's inventory.
 
 ## Features
 
-* [cite_start]**User Authentication:** Secure user registration (`POST /api/auth/register`) and login (`POST /api/auth/login`) using JWT (JSON Web Tokens)[cite: 13, 14, 17].
-* [cite_start]**Dynamic Product Catalog:** The shop page fetches all product data directly from the Django API, including real-time stock quantity[cite: 21, 30].
+* **User Authentication:** Secure user registration (`POST /api/auth/register`) and login (`POST /api/auth/login`) using JWT (JSON Web Tokens).
+* **Dynamic Product Catalog:** The shop page fetches all product data directly from the Django API, including real-time stock quantity.
 * **Full Inventory API:**
-    * [cite_start]Full CRUD (Create, Read, Update, Delete) for sweets (`GET`, `POST`, `PUT`, `DELETE /api/sweets/`) [cite: 20-25].
+    * Full CRUD (Create, Read, Update, Delete) for sweets (`GET`, `POST`, `PUT`, `DELETE /api/sweets/`).
     * `DELETE` and `PUT` operations are restricted to Admin users.
 * **Inventory Management:**
-    * [cite_start]`POST /api/sweets/:id/purchase`: Allows any authenticated user to purchase a sweet, decreasing its quantity[cite: 27, 28].
-    * [cite_start]`POST /api/sweets/:id/restock`: An admin-only endpoint to restock a sweet's quantity[cite: 29].
+    * `POST /api/sweets/:id/purchase`: Allows any authenticated user to purchase a sweet, decreasing its quantity.
+    * `POST /api/sweets/:id/restock`: An admin-only endpoint to restock a sweet's quantity.
 * **Frontend Client:** A responsive React application built with Vite, using React Router for navigation and Sonner for toast notifications.
 
 ## Tech Stack
 
 * **Backend:** Python, Django, Django REST Framework, DRF Simple JWT, `django-cors-headers`
-* [cite_start]**Database:** SQLite [cite: 11]
+* **Database:** SQLite
 * **Frontend:** React, Vite, TypeScript, Tailwind CSS
 * **Development:** Git, `python-dotenv`
 
@@ -27,7 +27,7 @@
 
 ## Getting Started
 
-[cite_start]To run this project locally, you will need to run two separate servers in two separate terminals (one for the backend and one for the frontend)[cite: 69].
+To run this project locally, you will need to run two separate servers in two separate terminals (one for the backend and one for the frontend).
 
 ### 1. Backend Setup (Django)
 
@@ -92,12 +92,11 @@ Can now open `http://localhost:8080/` in your browser to use the application.
 
 ---
 
-##  Screenshots
+## Screenshots
 
 <img width="1920" height="1080" alt="Screenshot 2025-11-02 233214" src="https://github.com/user-attachments/assets/60f0d6ca-3b4a-48e0-8d7b-a10058d6e93b" />
 <img width="1920" height="1080" alt="Screenshot 2025-11-02 233507" src="https://github.com/user-attachments/assets/920d01b1-b5cb-452f-9b6f-d9bafb2cf835" />
 <img width="1920" height="1080" alt="Screenshot 2025-11-02 233750" src="https://github.com/user-attachments/assets/29714a02-2fbf-4dcc-b185-73b48e3b7050" />
-
 
 ---
 
@@ -106,7 +105,7 @@ Can now open `http://localhost:8080/` in your browser to use the application.
 This project was built in accordance with the AI Usage Policy. I used AI as a pair programmer to guide development, provide code suggestions, and debug issues.
 
 ### AI tools used
-* [cite_start]**lovable ai:** Used for frontend code generation, debugging[cite: 60].
+* **lovable ai:** Used for frontend code generation, debugging.
 * **Gemini ai:** Used for backend code debugging, and project setup and generate commit messages.
 
 ### How you used them
